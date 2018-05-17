@@ -4,8 +4,10 @@ def roll_call_dwarves(roll_call)
   end
 end
 
-def summon_captain_planet# code an argument here
-  # Your code here
+def summon_captain_planet(planeteer_calls)
+  planeteer_calls.map do |calls|
+    calls = calls[0].upcase + calls.slice(1..calls.length-1) + "!"
+  end
 end
 
 def long_planeteer_calls# code an argument here
