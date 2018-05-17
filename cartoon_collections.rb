@@ -19,12 +19,5 @@ end
 def find_the_cheese(string_arr)
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-  i = 0;
-  string_arr.each do |word|
-    if string_arr.include?(cheese_types[word[i]]) == true
-    i+=1
-  else
-    return nil
-  end
-  end
+  cheese_types.include?(string_arr)
 end
